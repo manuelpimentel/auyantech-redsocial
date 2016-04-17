@@ -25,12 +25,7 @@ a.active {
     color: #18bc9c;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -82,30 +77,44 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #FFF;
+    background-size: 100% 100%;
+
 }
 
-header .container {
-    padding-top: 100px;
+header .block {    
+    background: #18bc9c;    
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
 header img {
     display: block;
     margin: 0 auto 20px;
+    width: 4.5cm;
+    height: 4.5cm;
 }
 
 header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
+    display: block;    
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
 }
 
+
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+}
+
+header p {
+    font-size: 15px;
+}
+
+header .bio{
+    display: block;
+    font-size:18px;   
 }
 
 @media(min-width:768px) {
@@ -182,6 +191,24 @@ section h2 {
 section.success {
     color: #fff;
     background: #18bc9c;
+}
+
+#about .block{        
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid black;    
+    height: 450px;
+}
+
+#about .block p {        
+    font-size: 14px;
+}
+
+#about #imagen {
+    margin-left: 15px;
+    border: 5px solid white;
+    width: 150px;
+    height: 150px;
 }
 
 section.success a,

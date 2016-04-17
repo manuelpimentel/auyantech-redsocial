@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <div>        
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#page-top">Filatelia</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#portfolio">Inicio</a>
+                        </li>                    
+                        <li class="page-scroll">
+                            <a href="#about">Subastas</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Mi Perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+    
+    <section id="about">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <h2 style="padding-top: 2cm;">Subastas</h2>
+                    <hr  style="padding-bottom: 2cm;" class="star-primary">
+                </div>
+            </div>
+
+            <div class="row">
+            <center>                
+                <div class="block col-md-3 col-md-offset-2">
+                    <center><img id="imagen" src="img/2.jpg"></center>
+                    <h3>Elvis - USA - 1980</h3>                                           
+                    <p style="color: #18bc9c;">Estampilla impresa en el año 1980 en conmemoracion a Elvis, la mas grande figura de la música para el momento</p>                            
+                    <p align="left" style="font-size: 35px;">Precio: 15.350 Bs</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Ofertar
+                    </button>                                                            
+                </div> 
+                <div class="block col-md-3 col-md-offset-2">
+                    <center><img id="imagen" src="img/3.jpg"></center>
+                    <h4>Bicentenario correo maritimo - Venezuela - 1965</h4>
+                    <p style="color: #18bc9c;">Estampilla impresa en el año 1965 en conmemoracion a el Bicentenario del Correo Marítimo en Venezuela</p>
+                    <p align="left" style="font-size: 35px;">Precio: 45.700 Bs</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Ofertar</button>
+                </div>                
+            </center>
+            </div>                
+        </div>
+    </section>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div>
+                    <center><h1 style="font-size: 95px;">12:39<small style="font-size: 15px;">Horas restantes</small></h1></center>
+                </div>            
+          </div>
+          <div class="modal-body">
+                <center><img style="width: 200px; height: 250px;" src="img/2.jpg"></center>
+                <hr>
+                <h4 class="modal-title" id="myModalLabel">Elvis - USA - 1980</h4>
+                <hr>
+                <h2>Precio: 15.350 Bs</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+            <button type="button" class="btn btn-primary">Ofertar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div>
+                    <center><h1 style="font-size: 95px;">2:16<small style="font-size: 15px;">Horas restantes</small></h1></center>
+                </div>            
+          </div>
+          <div class="modal-body">
+                <center><img style="width: 200px; height: 250px;" src="img/3.jpg"></center>
+                <hr>
+                <h4 class="modal-title" id="myModalLabel">Bicentenario correo maritimo - Venezuela - 1965</h4>
+                <hr>
+                <h2>Precio: 45.700 Bs</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+            <button type="button" class="btn btn-primary">Ofertar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>

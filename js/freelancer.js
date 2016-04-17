@@ -15,6 +15,18 @@ $(function() {
     });
 });
 
+$(function(){    
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+    });
+});
+
+$(function(){    
+    $('#myModal1').on('shown.bs.modal', function () {
+      $('#myInput1').focus()
+    });
+});
+
 // Floating label headings for the contact form
 $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
