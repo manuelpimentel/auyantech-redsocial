@@ -9,19 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Filatelia - Start Bootstrap Theme</title>
+    <title>Freelancer - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-
-
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,253 +28,132 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="js/TweenLite.min.js"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-inverse" role="navigation">
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand pull-left" href="index.html">Filatelia UCAB</a>
+                <a class="navbar-brand" href="#page-top">Filatelia</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-left">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
                     <li>
                         <a href="index.html">Inicio</a>
+                    </li>                    
+                    <li>
+                        <a href="subastas.html">Subastas</a>
                     </li>
                     <li>
-                        <a href="about.html">¿Quienes Somos?</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Foro</a>
-                    </li>
-                    <li>
-                        <a href="subasta.html">Subastas</a>
-                    </li>
-                    <li>
-                        <a href="catalogo.html">Catalogo</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contacto</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-                        <ul id="login-dp" class="dropdown-menu">
-                            <li>
-                                 <div class="row">
-                                        <div class="col-md-12">
-                                            Login via
-                                            <div class="social-buttons">
-                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                            </div>
-                                            o
-                                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                                    <div class="form-group">
-                                                         <label class="sr-only" for="exampleInputEmail2">Email direccion</label>
-                                                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                         <label class="sr-only" for="exampleInputPassword2">Contrasena</label>
-                                                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                         
-                                                    </div>
-                                                    <div class="form-group">
-                                                         <button type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
-                                                         <div class="help-block text-center"><a href="">Se te olvido tu contrasena?</a></div>
-                                                    </div>
-                                                    <div class="checkbox">
-                                                         <label>
-                                                        
-                                                         </label>
-                                                    </div>
-                                             </form>
-                                        </div>
-                                        <div class="bottom text-center">
-                                            Nuevo aqui? <a href="#"><b>Registrate</b></a>
-                                        </div>
-                                 </div>
-                            </li>
-                        </ul>
+                        <a href="#contact">Mi Perfil</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
-    
-    <!-- Navigation -->
-    
-    <div class="container">
 
-        <div class="row">
-            
-                <div class="col-lg-12 text-center">
-                    
-                    <h2 class="brand-before">
-                       Bienvenido a
-                    </h2>
-                    <div class="brand" style="color:#000000">Filatelia UCAB</div>
-                    <hr class="tagline-divider">
-                    <h2>
-                        <small>Por
-                            <strong color="#000000"> Soluciones Auyan Tech C.A</strong>
-                        </small>
-                    </h2>
+    <!-- Header -->
+    <div class="row vertical-offset-100">
+        <div class="container">
+            <br><br><br>
+                <div class="col-md-6 col-md-offset-1">
+                <h1 style="color=#FFFFFF"><strong>Bienvenidos a Stamp</strong></h1>
+                <p style="color=#FFFFFF"> Conéctate y comunicate con tus amigos filatelicos y otras personas fascinantes. <br>Obten informacion relevante acerca de la filatelia, unete a clubs!.<br> Busca a la persona que tiene tu estampilla, comunicate con el. <br> Las estampillas que tanto buscas estan en STAMP!. <br><br>Diviertete .</p>
                 </div>
-            
-        </div>
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Un poco de 
-                        <strong>Historia</strong>
-                    </h2>
-                    <hr>
-                    <img class="img-responsive img-border img-left" src="img/slide-1.jpg" alt="">
-                    <hr class="visible-xs">
-                    <p>Los historiadores concuerdan que en Egipto, en el siglo VI a. C., ya existía un servicio de transporte de correspondencia oficial. Los manuscritos egipcios, escritos sobre papiro, se transportaban principalmente mediante embarcaciones especiales que navegaban el río Nilo.</p>
-                    <p>China, en el siglo III a. C., fue el primer país que contó con un servicio postal organizado y fue también el primero en emplear el papel en su correspondencia. </p>
-                    <p>En la América precolombina también hubo un sistema de relevos para llevar mensajes e informes al tlatoani (señor gobernante).</p>
-                    <p>Los persas, durante el reinado de Ciro el Grande (555 a. C.) establecieron un servicio de postas.</p>
-                    <p>Todos estos servicios eran sólo para el traslado de correspondencia oficial, el público en general no tenía acceso a ellos. </p>
-                    <p>En los últimos años del siglo XVII prácticamente todos los países disponían de correos oficiales y también de correos particulares organizados por comerciantes para el traslado de su correspondencia. </p>
-                    <p>En 1625, durante la época del cardenal Richelieu, Francia fue el primer Estado que tomó a su cargo directamente la organización y explotación de los servicios de correos. </p>
+                <div class="col-md-4 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Ingrese</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me"> Recuerdame
+                                    </label>
+                                </div>
+                                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+                            </fieldset>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
-         <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Exhibicion en
-                        <strong>Nueva York</strong>
-                    </h2>
-                    <hr>
-                    <img class="img-responsive img-border img-left" src="img/stampshow.jpg" alt="">
-                    <hr class="visible-xs">
-                    <p>Nos aproximamos al mayor espectáculo filatélico no sólo del del año 2016, sino de los últimos tiempos.</p>
-                    <p>La exposición reunirá un total de cuatro mil marcos expositivos convirtiéndola en una de más grandes de los últimos tiempos. Según los organizadores está prevista la presencia de unos 250 mil visitantes.</p>
-                    <p>La programación del WSS-NY 2016 (World Stamp Show-NY 2016)  desarrollará una amplia variedad de actividades de interés para los visitantes, además poder de visitar la multitud de stands de comerciantes filatélicos y de las administraciones postales que han confirmado su presencia.
-                    </p>
-                    <p>Toda la información sobre las actividades programadas se detallan en la web oficial, que para facilitar la comprensión a los lectores en lengua no inglesa,  incorpora el traductor de Google. El Comisario por España, el granadino Rafael Acuña, también facilita la información que se pueda necesitar y está en continuo contacto con la participación española.</p>
-                    <p>La relación de colecciones y participaciones admitidas se comuicó hace unos días a los Comisarios Nacionales, que, a su vez, la han transmitido a cada uno de los participantes.</p>
-                    <p>En el caso de España, serán expuestas las siguientes colecciones:</p>
-                    <table>
-                        <tr>
-                 <th width="60%">Titulo</th>
-                 <th width="20%">Cuadros </th>
-                 <th>Expositor </th>
-              </tr>
-              
-              <tr>
-                 <td width="50%">   The black of 1850, Spain</td>
-                 <td>8 </td>
-                 <td>Luis Domingo</td>
-                 
-              </tr>
-              
-              <tr>
-                 <td width="50%">       Maritime mail of Spanish colonies in América</td>
-                 <td>8 </td>
-                 <td>Jesús  Sitja Prats</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">           Madrid 1561-1856. Royal Post and public correspondance</td>
-                 <td>5 </td>
-                 <td>Ramón  Cortés de Haro</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">           Postal of Valencia Kingdom 1566-1875</td>
-                 <td>8 </td>
-                 <td>Juan Antonio   Llácer Gracia</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">           ARGENTINA. POSTAL STATIONERY “RIBADAVIA” ISSUE</td>
-                 <td>8 </td>
-                 <td>Arturo Ferrer Zavala</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">       The Postal Stationery of Peru</td>
-                 <td>8 </td>
-                 <td>German Baschwitz Gómez</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">           Hunting: Necesity, sport or extermination?</td>
-                 <td>8 </td>
-                 <td>Ruth   Ordóñez Sanz</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">       The Conquest of Horizon</td>
-                 <td>8 </td>
-                 <td>Francisco  Piniella Corbacho</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">           The Scouting Adventure</td>
-                 <td>8 </td>
-                 <td>Estanislao Pan de Alfaro</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">       Emissions Judicial Law (used in Cuba from 1856 to 1864)</td>
-                 <td>5 </td>
-                 <td>Fernando   Cabello Borrás</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">       Valencian prefilatelics marks XVIII-XIX centuries</td>
-                 <td>3 </td>
-                 <td>Miriam Gispert Llacer</td>
-                 
-              </tr>
-              <tr>
-                 <td width="50%">       Maritime mail of Spanish colonies in América</td>
-                 <td>8 </td>
-                 <td>Jesús  Sitja Prats</td>
-                 
-              </tr>
-
-
-                    </table>
-                    <p>Ya se conocen los nombres de los miembros del jurado; entre ellos, están los españoles José Ramón Moreno Fernández- Fígares (clase abierta, moderna y literatura) y Fernando Aranaz (Historia Postal y Astrofilatelia), los dos como Cabezas de Equipo, cargo de enorme importancia en un jurado.En la Clase Literatura EDIFIL participa con seis publicaciones diferentes, Eugenio de Quesada con dos y Rafael Raya y José Antonio Herraiz con sus más recientes obras filatélicas.</p>
-                </div>
-            </div>
-        </div>
-       
-
     </div>
-    <!-- /.container -->
+    <div class="row vertical-offset-100">
+        <div class="container">
+                <div class="col-md-11 col-md-offset-1">
 
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Eres nuevo en Stamp? Registrate</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Usuario" name="usuario" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Contrasena" name="contrasena" type="password" value="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Confirmacion de Contrasena" name="ccontrasena" type="password" value="">
+                                </div>
+                                
+                                <input class="btn btn-md btn-primary btn-block" type="submit" value="Registrate">
+                            </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p><br><br><br><br>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -283,12 +161,17 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
 
 </body>
 
