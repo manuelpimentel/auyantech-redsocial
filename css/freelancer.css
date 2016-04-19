@@ -94,6 +94,7 @@ header .block {
     box-shadow: 3px 3px 10px #888888;
 }
 
+
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -219,25 +220,22 @@ section.success {
 }
 
 section .album{   
-    box-shadow: 2px 2px 10px #888888;
-    border-radius: 10px;
+    box-shadow: 1px 1px 10px #888888;
+    border-radius: 5px;
     background: #FFFFFF;
     width: 250px;
     height: 340px;
-
 }
 
 section .ealbum{       
     border-radius: 10px;    
     width: 250px;
     height: 340px;
-
 }
-
 
 section .album #imgbig{
     height: 150px;
-    width: 210px;    
+    width: 210px;
 }
 
 section .album .stamp{
