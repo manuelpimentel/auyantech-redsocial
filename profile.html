@@ -27,10 +27,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<script src="js/TweenLite.min.js"></script>
 </head>
 
-<body id="page-top" class="index">
+<body>
 
     <!-- Navigation -->
     <div>        
@@ -50,14 +49,16 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        
-                        <li>
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
                             <a href="index.html">Inicio</a>
                         </li>                    
-                        <li >
+                        <li class="page-scroll">
                             <a href="subastas2.html">Subastas</a>
                         </li>
-                        <li>
+                        <li class="page-scroll">
                             <a href="profile.html">Mi Perfil</a>
                         </li>
                     </ul>
@@ -108,7 +109,7 @@
     
     <section id="portfolio">
         <div class="container-fluid">            
-        <h3 style="text-transform: lowercase; margin-left: 20px; margin-bottom: 20px;">Mis Albumes</h3>
+        <h3 style="margin-left: 20px; margin-bottom: 20px;">Mis Albumes</h3>
             <div style="padding-left: 2cm" class="row">
                 <div style="margin-left: 0.5cm; border: 1px dashed silver;" class="ealbum col-md-3 portfolio-item">
                     <div style="padding-top: 3cm;"> 
@@ -169,6 +170,38 @@
                     </div>
                     <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
                 </div>
+            </div>            
+        </div>
+    </section>
+     <section id="portfolio">
+        <div class="container-fluid">            
+        <h3 style="margin-left: 20px; margin-bottom: 20px;">Mis Subastas Activas</h3>
+            <div style="padding-left: 2cm" class="row">
+                <div style="margin-left: 0.5cm; border: 1px dashed silver;" class="ealbum col-md-3 portfolio-item">
+                    <div style="padding-top: 3cm;"> 
+                        <center><span style="font-size: 20px" class="glyphicon glyphicon-plus" aria-hidden="true"></span></center>
+                        <center><p>Crear un album</p></center>
+                    </div>                    
+                </div>
+
+                <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
+                    <div>                        
+                        <h4>Elvis Usa</h4><br><br>                        
+                        <center><img id="imgbig" src="img/2.jpg" class="img-responsive" alt=""></center>
+                        
+                    </div>
+                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
+                </div>
+
+                <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
+                    <div>                        
+                        <h4>Bicentenario correo maritimo - Venezuela - 1965</h4>                        
+                        <center><img id="imgbig" src="img/3.jpg" class="img-responsive" alt=""></center>
+                       
+                    </div>
+                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
+                </div>
+               
             </div>            
         </div>
     </section>
