@@ -53,15 +53,8 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>                    
-                    <li>
-                        <a href="subastas2.html">Subastas</a>
-                    </li>
-                    <li>
-                        <a href="profile.html">Mi Perfil</a>
-                    </li>
+                    
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -97,7 +90,11 @@
                                         <input name="remember" type="checkbox" value="Remember Me"> Recuerdame
                                     </label>
                                 </div>
-                                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+                                <button class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+                                 <a href="profile.html">
+                                 Login
+                                 </a>
+                                </button>
                             </fieldset>
                             </form>
                         </div>
@@ -128,8 +125,9 @@
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Confirmacion de Contrasena" name="ccontrasena" type="password" value="">
                                 </div>
-                                
-                                <input class="btn btn-md btn-primary btn-block" type="submit" value="Registrate">
+                              
+                                <input class="btn btn-md btn-primary btn-block" type="submit" value="Registrate" onclick="location.href = profile.html">
+                                </form>
                             </fieldset>
                             </form>
                         </div>
