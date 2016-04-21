@@ -30,7 +30,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top">
 
     <!-- Navigation -->
     <div>        
@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#page-top">Filatelia</a>
+                    <a class="navbar-brand" href="#page-top">Stamp it!</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,7 +54,7 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="index.html">Inicio</a>
+                            <a href="home.html">Inicio</a>
                         </li>                    
                         <li class="page-scroll">
                             <a href="subastas2.html">Subastas</a>
@@ -70,34 +70,60 @@
         </nav>
     </div>
     
-    <section id="about">
-        <div class=" container-fluid">
+    <section id="about">        
             <div class="row">
-                <div class="col-lg-12 col-md-12 text-center"><br><br>
-                    <h2 style="padding-top: 2cm;">Subastas</h2>
-                    <hr  style="padding-bottom: 2cm;" class="star-primary">
-                </div>
-            </div>
+                <div class="col-md-3 sidebar">
+                    <h4>Categorías</h4>                
 
-            <div class="row">
-            <center>                
-                <div class="block col-md-3 col-md-offset-2">
-                    <center><img id="imagen" src="img/2.jpg"></center>
-                    <h3>Elvis - USA - 1980</h3>                                           
-                    <p style="color: #18bc9c;">Estampilla impresa en el año 1980 en conmemoracion a Elvis, la mas grande figura de la música para el momento</p>                            
-                    <p align="left" style="font-size: 35px;">Precio: 15.350 Bs</p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                        Ofertar
-                    </button>                                                            
-                </div> 
-                <div class="block col-md-3 col-md-offset-2">
-                    <center><img id="imagen" src="img/3.jpg"></center>
-                    <h4>Bicentenario correo maritimo - Venezuela - 1965</h4>
-                    <p style="color: #18bc9c;">Estampilla impresa en el año 1965 en conmemoracion a el Bicentenario del Correo Marítimo en Venezuela</p>
-                    <p align="left" style="font-size: 35px;">Precio: 45.700 Bs</p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Ofertar</button>
-                </div>                
-            </center>
+                </div>
+                <div class="col-md-8 grid">                    
+                    <div class="row">
+                        <div class="block col-md-5">
+                            <div class="blocktop">
+                                <img class="img-circle" src="img/pp2.jpg"><h6>José Acosta</h6>
+                            </div>   
+                            <hr>
+                            <center><h4>Elvis - Estados unidos - 1980</h4></center>
+                            <div>
+                                <center><img class="thumbnailstamp" src="img/2.jpg"></center>
+                            </div>
+                            <hr>
+                            <center><button style="font-size: 20px" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+                                Ofertar
+                            </button></center>
+                        </div>
+                        <div style="margin-left: 55px;" class="block col-md-5">
+                            <div class="blocktop">
+                                <img class="img-circle" src="img/pp1.jpg"><h6>Rafael Gonzalez</h6>
+                            </div>   
+                            <hr>
+                            <center><h4>Bicentenario correo maritimo - Venezuela - 1965</h4></center>
+                            <div>
+                                <center><img class="thumbnailstamp" src="img/3.jpg"></center>
+                            </div>
+                            <hr>
+                            <center><button style="font-size: 20px" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal1">
+                                Ofertar
+                            </button></center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="block col-md-5">
+                            <div class="blocktop">
+                                <img class="img-circle" src="img/pp.jpg"><h6>Daniel Andrade</h6>
+                            </div>   
+                            <hr>
+                            <center><h4>Centenario de independencia - Colombia - 1910</h4></center>
+                            <div>
+                                <center><img class="thumbnailstamp" src="img/1.jpg"></center>
+                            </div>
+                            <hr>
+                            <center><button style="font-size: 20px" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal2">
+                                Ofertar
+                            </button></center>
+                        </div>                       
+                    </div>                
+                </div>
             </div>                
         </div>
     </section>
@@ -143,6 +169,31 @@
                 <h4 class="modal-title" id="myModalLabel">Bicentenario correo maritimo - Venezuela - 1965</h4>
                 <hr>
                 <h2>Precio: 45.700 Bs</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+            <button type="button" class="btn btn-primary">Ofertar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div>
+                    <center><h1 style="font-size: 95px;">22:16<small style="font-size: 15px;">Horas restantes</small></h1></center>
+                </div>            
+          </div>
+          <div class="modal-body">
+                <center><img style="width: 200px; height: 250px;" src="img/1.jpg"></center>
+                <hr>
+                <h4 class="modal-title" id="myModalLabel">Bicentenario correo maritimo - Venezuela - 1965</h4>
+                <hr>
+                <h2>Precio: 5.300 Bs</h2>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
