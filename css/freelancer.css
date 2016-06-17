@@ -434,8 +434,11 @@ section.success a.active {
     }
 }
 
-section.profile .form_block{
-    margin-top: 100px;
+section.profile{
+    margin-top: 200px;
+}
+
+section.profile .form_block{    
     border-radius: 5px;    
     margin-bottom: 10px;
     box-shadow: 2px 2px 4px #888888;
