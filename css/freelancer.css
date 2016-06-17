@@ -438,11 +438,11 @@ section.success a.active {
     }
 }
 
-section.profile{
+.profile{
     margin-top: 100px;
 }
 
-section.profile .form_block{            
+.profile .form_block{            
     margin-bottom: 10px;
     box-shadow: 2px 2px 4px #888888;
     background: #2c3e50;
@@ -450,11 +450,11 @@ section.profile .form_block{
     margin-right: 30px;
 }
 
-section.profile .form_block .form{
+.profile .form_block .form{
     padding: 50px 50px 50px 50px;
 }
 
-section.profile .form_block .form .form-group img {
+.profile .form_block .form .form-group img {
     display: block;
     margin: 0 auto 20px;
     width: 4.5cm;
