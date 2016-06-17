@@ -129,7 +129,7 @@ header .block {
 }
 
 
-header img {
+header img, section.profile .form .form-group img {
     display: block;
     margin: 0 auto 20px;
     width: 4.5cm;
