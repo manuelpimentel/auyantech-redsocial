@@ -262,7 +262,18 @@ section.home{
 
 }
 
-.home .feed .block, .profile .form_block{
+.home .feed .block{
+    border-radius: 5px;
+    margin-right: 10px;  
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px #888888;
+    background: #2c3e50;
+    margin-left: 100px;
+}
+
+
+.profile .form_block{
     border-radius: 5px;
     margin-right: 10px;  
     padding-bottom: 10px;
