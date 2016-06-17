@@ -129,7 +129,7 @@ header .block {
 }
 
 
-header img, section.profile .form .form-group img {
+header img{
     display: block;
     margin: 0 auto 20px;
     width: 4.5cm;
@@ -450,7 +450,12 @@ section.profile .form_block .form{
     padding: 50px 50px 50px 50px;
 }
 
-
+section.profile .form_block .form .form-group img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 4.5cm;
+    height: 4.5cm;
+}
 
 #portfolio .portfolio-item {
     right: 0;
