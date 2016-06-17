@@ -441,7 +441,8 @@ section.profile{
 section.profile .form_block{            
     margin-bottom: 10px;
     box-shadow: 2px 2px 4px #888888;
-    background: #2c3e50;    
+    background: #2c3e50;
+    margin-left: 400px
 }
 
 section.profile .form_block .form{
