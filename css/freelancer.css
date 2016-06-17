@@ -245,6 +245,7 @@ section.albumes {
     border-bottom: 2px solid gray;
 }
 
+
 .home .post img{
     width: 60px;
     height: 60px;
@@ -404,8 +405,8 @@ section .album #imgbig{
 }
 
 section .album .stamp{
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
     margin-left: 2px;
     border: 1px solid gray;
 }
@@ -433,11 +434,11 @@ section.success a.active {
     }
 }
 
-.profile{
+.editprofile{
     margin-top: 100px;
 }
 
-.profile .form_block{            
+.editprofile .form_block{            
     margin-bottom: 10px;
     box-shadow: 2px 2px 4px #888888;
     background: #2c3e50;
@@ -445,11 +446,11 @@ section.success a.active {
     margin-right: 30px;
 }
 
-.profile .form_block .form{
+.editprofile .form_block .form{
     padding: 50px 50px 50px 50px;
 }
 
-.profile .form_block .form .form-group img {
+.editprofile .form_block .form .form-group img {
     display: block;
     margin: 0 auto 20px;
     width: 4.5cm;
