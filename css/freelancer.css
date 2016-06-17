@@ -405,8 +405,8 @@ section .album #imgbig{
 }
 
 section .album .stamp{
-    width: 100%;
-    height: 100%;
+    width: 77px;
+    height: 70px;
     margin-left: 2px;
     border: 1px solid gray;
 }
