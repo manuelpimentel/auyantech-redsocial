@@ -13,7 +13,7 @@ body.index{
 
 
 body {
-    background: #D6D6D6;
+    background: #FAFAFA;
 }
 
 .vertical-offset-100{
@@ -245,30 +245,36 @@ section.albumes {
     border-bottom: 2px solid gray;
 }
 
+.home .post{
+    width: 617px;
+    margin-left: 330px;
+    background: #2c3e50;
+    height: 100px;   
+    border-radius: 5px;
+}
 
-.home .post img{    
+.home .post img{
+    width: 60px;
     height: 60px;
     margin-left: 15px;
     margin-top: 20px; 
 }
 
 
-.home .feed{
-    margin-left: 200px;    
+.home .feed{    
     height: 800px;
     width: 100%;    
     margin-top: 150px;
 
 }
 
-.home .feed .block{
-    border-radius: 5px;
+.home .feed .block{    
     margin-right: 10px;  
     padding-bottom: 10px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 4px #888888;
     background: #2c3e50;
-    margin-left: 100px;
+    margin-left: 5px;
 }
 
 
@@ -288,15 +294,6 @@ section.albumes {
     width: 100%;
 }
 
-
-.home .post{
-    margin-left: 320px;
-    background: #2c3e50;
-    height: 100px;
-    width: 570px;
-    border-radius: 5px;
-}
-
 #about{
     padding-top: 100px;
 }
@@ -308,20 +305,16 @@ section.albumes {
 
 
 #about .sidebar {    
-    margin-left: 30px;
-    padding-top: 20px;
-    background: white;
+    margin-left: 80px;
+    padding-top: 20px;    
     height: 200px;
 }
 #about .sidebar p{
     margin-left: 30px;
     }
 
-#about .grid{
-    box-shadow: 1px 1px 2px #888888;
-    margin-left: 30px;
-    padding-top: 20px;
-    background: white;
+#about .grid{        
+    padding-top: 20px;    
     height: 850px;
 }
 
@@ -329,13 +322,13 @@ section.albumes {
 
 #about .grid .row{
     margin: 0 auto;
-    margin-left: 45px;
+    margin-left: 25px;
 }
 
 #about .block{   
     margin-right: 10px;  
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 108x;
     box-shadow: 2px 2px 4px #888888;
     background: white;
 }
@@ -343,8 +336,7 @@ section.albumes {
 #hola{   
     margin-right: 10px;  
     padding-bottom: 10px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 4px #888888;
+    margin-bottom: 10px;    
     background: white;
 }
 
@@ -353,14 +345,14 @@ section.albumes {
     margin-left: 20px;
     padding-bottom: 20px;    
     height: 350px;
-    border-radius: 5px;
+    
     box-shadow: 1px 1px 2px #888888;
     background: white;
 }
 
 #about .blocktop img {
     float: left;
-    width: 40px;
+    width: 40px;    
     height: 40px;
     background: black;
 }
