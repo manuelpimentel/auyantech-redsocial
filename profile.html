@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Daniela Rodriguez - Stam It!</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -63,9 +63,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                    <div class="dropdown-content">
                                     <li><a href="profile.html">Mi Cuenta </a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="">Editar Perfil</a></li>
-                                    <li role="separator" class="divider"></li>
+                                    <li role="separator" class="divider"></li>                                    
                                     <li><a href="index.html">Cerrar Sesion</a></li>
 
                                     </div>
@@ -85,26 +83,12 @@
                 <div class="group-block col-md-3">
                     <h4>Invitaciones pendientes</h4>
                     <div style="padding-left: 40px;" class="row">
-                        <p style="font-size: 15px;">Filatelia Caracas</p>
+                        <p style="font-size: 15px;">Reunion filatélica IESA</p>
                         <div style="margin-left: 10px;" class="btn-group" role="group">
                             <button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
                             <button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
                         </div>
-                    </div>
-                    <div style="padding-left: 40px;" class="row">
-                        <p style="font-size: 15px;">Filatelia Caracas</p>
-                        <div style="margin-left: 10px;" class="btn-group" role="group">
-                            <button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-                            <button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                        </div>
-                    </div>
-                    <div style="padding-left: 40px;" class="row">
-                        <p style="font-size: 15px;">Filatelia Caracas</p>
-                        <div style="margin-left: 10px;" class="btn-group" role="group">
-                            <button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-                            <button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="block col-md-5 col-md-offset-1">
                    <center><img class="img-responsive img-circle" src="img/profile-picture.jpg" alt=""></center>
@@ -216,7 +200,9 @@
                         <center><img id="imgbig" src="img/2.jpg" class="img-responsive" alt=""></center>
                         
                     </div>
-                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">ver subasta</button>
+                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">
+                        Ver subasta
+                    </button>
                 </div>
 
                 <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
@@ -225,7 +211,9 @@
                         <center><img id="imgbig" src="img/3.jpg" class="img-responsive" alt=""></center>
                        
                     </div>
-                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">ver subasta</button>
+                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal1">
+                        Ver subasta
+                    </button>
                 </div>
                
             </div>            
@@ -244,41 +232,108 @@
                 </div>
                 <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
                     <div>                        
-                        <h4>Antiguas</h4>                        
-                        <center><img id="imgbig" src="img/1.jpg" class="img-responsive" alt=""></center>
-                        <div style="padding-top: 10px; width: 210" class="row">
-                            <div class="col-md-4">
-                                <img src="img/1.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="img/2.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                            </div>
-                        </div>
+                        <h4>Reunion anual filatelia UCAB</h4>                        
+                        <center><img style="height: 80%;" id="imgbig" src="img/UCAB.jpg" class="img-responsive"></center>
                     </div>
-                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
-                </div>
-                <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
-                    <div>                        
-                        <h4>Usa</h4>                        
-                        <center><img id="imgbig" src="img/1.jpg" class="img-responsive" alt=""></center>
-                        <div style="padding-top: 10px; width: 210" class="row">
-                            <div class="col-md-4">
-                                <img src="img/1.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="img/2.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                            </div>
-                        </div>
-                    </div>
-                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
+                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal3">
+                        Detalle del evento
+                    </button>
                 </div>                
             </div>            
         </div>
     </section>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div>
+                    <center><h1 style="font-size: 95px;">12:39<small style="font-size: 15px;">Horas restantes</small></h1></center>
+                </div>            
+          </div>
+          <div class="modal-body">
+                <center><img style="width: 200px; height: 250px;" src="img/2.jpg"></center>
+                <hr>
+                <h4 class="modal-title" id="myModalLabel">Elvis - USA - 1980</h4>
+                <hr>
+                <h2>Precio: 15.350 Bs</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+            <button type="button" class="btn btn-primary">Ofertar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal2 -->
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div>
+                    <center><h1 style="font-size: 95px;">2:16<small style="font-size: 15px;">Horas restantes</small></h1></center>
+                </div>            
+          </div>
+          <div class="modal-body">
+                <center><img style="width: 200px; height: 250px;" src="img/3.jpg"></center>
+                <hr>
+                <h4 class="modal-title" id="myModalLabel">Bicentenario correo maritimo - Venezuela - 1965</h4>
+                <hr>
+                <h2>Precio: 45.700 Bs</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+            <button type="button" class="btn btn-primary">Ofertar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-2">
+                       <img style="width: 100px; height: 100px;" src="img/UCAB.jpg">
+                    </div>
+                    <div class="col-md-10">
+                       <h3>Reunion anual fialtelia UCAB</h3>
+                    </div>
+                </div>            
+          </div>
+          <div class="modal-body">
+                <div style="margin-left: 20px; margin-right: 20px;">
+                    <p style="text-align: justify;">
+                        El club de filatelia de la Universidad Católica Andrés Bello, tiene el placer y el honor de invitarle a nuestro encuentro anual de filatelia, como todos los años contamos con muchisimas sorpresas, invitados especiales, foros, entre otros, contamos con su presencia.
+                    </p>
+                    </br>
+                    <p style="text-align: justify;">
+                        Para mayor información, ingrese a nuestra página web: <a href="">www.ucab.edu.ve/</a>
+                    </p>    
+                    </p>
+                    </br>
+                    <p style="text-align: justify;">
+                        Dirección: Sotano de Biblioteca, Universidad Católica Andrés Bello, Juan Pablo II, Caracas, Distrito Capital
+                        Fecha: Sábado, 23 de Julio de 2016
+                        Hora: 10:00 am                        
+                    </p>                    
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
         <!-- jQuery -->
