@@ -77,19 +77,19 @@
         </nav>
     </div>
 
-    <header>
+    <header class="not-empty">
         <div class="container">            
             <div class="row">            
                 <div class="group-block col-md-3">
                     <h4>Invitaciones pendientes</h4>
-                    <div style="padding-left: 40px;" class="row">
-                        <p style="font-size: 15px;">Reunion filatélica IESA</p>
+                    <div style="padding-left: 40px;" class="row" >                    
+                        <p id="ptext" style="font-size: 15px;">Reunion anual UCAB</p>
                         <div style="margin-left: 10px;" class="btn-group" role="group">
-                            <button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                            <button type="button" class="btn btn-success btn-xs" id="btnaceptar"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
                             <button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
                         </div>
                     </div>                    
-                </div>
+                </div>                
                 <div class="block col-md-5 col-md-offset-1">
                    <center><img class="img-responsive img-circle" src="img/profile-picture.jpg" alt=""></center>
                     <div>
@@ -105,7 +105,11 @@
                         </div>                        
                     </div>
                 </div>
-                
+                <div class="col-md-2 col-md-offset-1">
+                    <button style="width: 100px;" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">
+                        Editar perfil
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -136,41 +140,7 @@
                         </div>
                     </div>
                     <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
-                </div>
-                <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
-                    <div>                        
-                        <h4>Usa</h4>                        
-                        <center><img id="imgbig" src="img/1.jpg" class="img-responsive" alt=""></center>
-                        <div style="padding-top: 10px; width: 210" class="row">
-                            <div class="col-md-4">
-                                <img src="img/1.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="img/2.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                            </div>
-                        </div>
-                    </div>
-                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
-                </div>
-                <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
-                    <div>                        
-                        <h4>Antiguas</h4>                        
-                        <center><img id="imgbig" src="img/1.jpg" class="img-responsive" alt=""></center>
-                        <div style="padding-top: 10px; width: 210" class="row">
-                            <div class="col-md-4">
-                                <img src="img/1.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="img/2.jpg" class="stamp" alt="">
-                            </div>
-                            <div class="col-md-4">
-                            </div>
-                        </div>
-                    </div>
-                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" type="submit">Editar Album</button>
-                </div>
+                </div>                
             </div>            
         </div>
     </section>
@@ -214,7 +184,7 @@
     
     <section id="portfolio" class="albumes">
         <div class="container-fluid">            
-        <h3 style="margin-left: 20px; margin-bottom: 20px;">Mis eventos</h3>
+            <h3 style="margin-left: 20px; margin-bottom: 20px;">Mis eventos</h3>
             <div style="padding-left: 2cm" class="row">
                 <div class="ealbum col-md-3 portfolio-item">
                     <div style="padding-top: 3cm;"> 
@@ -222,15 +192,24 @@
                         <center><p style="color: white;">Crear un evento</p></center>
                     </div>                    
                 </div>
-                <div style="margin-left: 0.5cm;" class="album col-md-3 portfolio-item">
+                <div style="margin-left: 0.5cm;" class="reu album col-md-3 portfolio-item" id="hidereu">
                     <div>                        
                         <h4>Reunion anual filatelia UCAB</h4>                        
-                        <center><img style="height: 80%;" id="imgbig" src="img/UCAB.jpg" class="img-responsive"></center>
+                        <center><img style="height: 200px;" id="imgbig" src="img/UCAB.jpg" class="img-responsive"></center>
                     </div>
                     <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal3">
                         Detalle del evento
                     </button>
-                </div>                
+                </div>
+                <div style="margin-left: 0.5cm;" class="reu album col-md-3 portfolio-item" >
+                    <div>                        
+                        <h4>Intercambio Filatelia Chacao</h4>                        
+                        <center><img style="height: 200px;" id="imgbig" src="img/chacao.png" class="img-responsive"></center>
+                    </div>
+                    <button style="width: 210px; margin-top: 10px;" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal31">
+                        Detalle del evento
+                    </button>
+                </div>
             </div>            
         </div>
     </section>
@@ -304,7 +283,8 @@
           <div class="modal-body">
                 <div style="margin-left: 20px; margin-right: 20px;">
                     <p style="text-align: justify;">
-                        El club de filatelia de la Universidad Católica Andrés Bello, tiene el placer y el honor de invitarle a nuestro encuentro anual de filatelia, como todos los años contamos con muchisimas sorpresas, invitados especiales, foros, entre otros, contamos con su presencia.
+                        El club de filatelia de la Universidad Católica Andrés Bello, tiene el placer y el honor de invitarle a nuestro encuentro anual de filatelia. 
+                        Como todos los años contamos con muchisimas sorpresas, invitados especiales, foros, entre otros, contamos con su presencia.
                     </p>
                     </br>
                     <p style="text-align: justify;">
@@ -313,8 +293,12 @@
                     </p>
                     </br>
                     <p style="text-align: justify;">
-                        Dirección: Sotano de Biblioteca, Universidad Católica Andrés Bello, Juan Pablo II, Caracas, Distrito Capital
+                        Dirección: Sótano de Biblioteca, Universidad Católica Andrés Bello, Juan Pablo II, Caracas, Distrito Capital
+                    </p>
+                    <p style="text-align: justify;">
                         Fecha: Sábado, 23 de Julio de 2016
+                    </p>
+                    <p style="text-align: justify;">
                         Hora: 10:00 am                        
                     </p>                    
                 </div>
@@ -328,8 +312,72 @@
 
 
 
+    <!-- Modal 31 -->
+    <div class="modal fade" id="myModal31" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-2">
+                       <img style="width: 100px; height: 100px;" src="img/chacao.png">
+                    </div>
+                    <div class="col-md-10">
+                       <h3>Reunión Filatelia Chacao</h3>
+                    </div>
+                </div>            
+          </div>
+          <div class="modal-body">
+                <div style="margin-left: 20px; margin-right: 20px;">
+                    <p style="text-align: justify;">
+                        La alcaldía de chacao tiene el honor de invitarlo a la reunión que se llevará a cabo con motivo de la celebración del 4to aniversario del club Filatelicos Chacao, contaremos con un espacio de subastas para quue los coleccionistas que lo deseen puedan probar suerte vendiendo sus estampillas.
+                    </p>
+                    </br>
+                    <p style="text-align: justify;">
+                        Para mayor información, ingrese a nuestra página web: <a href="">www.chacao.gob.ve/</a>
+                    </p>    
+                    </p>
+                    </br>
+                    <p style="text-align: justify;">
+                        Dirección: Plaza Francia, Altamira, Caracas.
+                    </p>
+                    <p style="text-align: justify;">
+                        Fecha: Viernes , 22 de Julio de 2016
+                    </p>
+                    <p style="text-align: justify;">
+                        Hora: 5:00 pm                        
+                    </p>                    
+                </div>
+          </div>
+          <div class="modal-footer">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-danger" id="borrar" data-dismiss="modal">Eliminar evento</button>
+            </div>
+            <div class="col-md-offset-6">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
         <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $("#btnaceptar").click(function(){            
+            $(".reu").removeAttr("id");
+            $(".btn-group").attr("id","btn-group-hide");
+            $("#ptext").text('No tiene invitaciones pendientes');
+        });
+        $("#btnguardar").click(function(){            
+            $(".reu").removeAttr("id");                        
+        });
+        $("#borrar").click(function(){            
+            $(".reu").attr("id","hidereu");
+        });
+
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
